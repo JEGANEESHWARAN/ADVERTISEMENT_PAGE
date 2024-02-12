@@ -20,16 +20,16 @@
             min-height: 100hv;
             display: grid;
             place-items: center;
-            
+            background-image: url("sil.jpg");
         }
         .warp{
             width: 700px;
             height: 750px;
-            background-color: darkorange;
+            background-image: url("org.jpg");
             position: relative;
             overflow: hidden;
             border-radius: 10px;
-            border: 10px solid burlywood;
+            border: 5px solid brown;
         }
         .dres{
             padding-top: 30px;
@@ -39,9 +39,19 @@
         .dres img{
             margin-left: 20px;
             width: 450px;
+            box-shadow: 30px 60px 70px rgba(2, 2, 2, 0.489);
             border-radius: 50%;
             margin-bottom: 40px;
-            border: 10px solid purple;
+            border: 8px solid rgba(17, 23, 197, 0.233);
+        }
+        .shi img{
+            width: 200px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 250px;
+            left: 300px;
+            margin-bottom: 60px;
+            border: 15px solid wheat;
         }
         .off{
             writing-mode: vertical-lr;
@@ -97,7 +107,7 @@
     border-radius: 50%;
 }
 .icons-col i:hover{
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: black;
 }
     </style>
@@ -107,11 +117,15 @@
        
         <div class="dres">
                 <img src="dress.png" alt="">
+               
             <div class="off">
                  <p> 50% Offer </p>
             </div>
+           
         </div>
-        
+        <div class="shi">
+            <img src="shi.jpg" alt="">
+        </div>
     <div class="fon">
         <P class="p1">THE BOYS MENS WEAR</P>
         <P class="p2">NEW COLLECTION</P>
@@ -120,6 +134,7 @@
         </P>
     </div>
     <DIV class="add">
+        <i class="fa-solid fa-phone-volume"></i>
         <P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;123-456-7890</P>
         <P>WWW.reallygreatesite.com</P>
     </DIV>
