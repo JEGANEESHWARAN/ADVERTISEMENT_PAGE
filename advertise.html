@@ -23,17 +23,21 @@
             background-image: url("sil.jpg");
         }
         .warp{
-            width: 700px;
-            height: 750px;
+            width: 800px;
+            height: 800px;
             background-image: url("org.jpg");
             position: relative;
             overflow: hidden;
             border-radius: 10px;
-            border: 5px solid brown;
+            border: 5px solid rgba(205, 73, 17, 0.676);
             box-shadow: 10px 0px 40px 0px;
         }
+        .h{
+            font-family: Wide Latin;
+            font-size: 40px;
+            color: rgb(88, 35, 35);
+        }
         .dres{
-            padding-top: 30px;
             display: flex;
             justify-content: space-around;
         }
@@ -51,7 +55,7 @@
             border-radius: 50%;
             cursor: pointer;
             position: absolute;
-            bottom: 250px;
+            bottom: 270px;
             left: 300px;
             margin-bottom: 60px;
             border: 15px solid wheat;
@@ -63,25 +67,43 @@
         }
         .off{
             writing-mode: vertical-lr;
-            padding-top: 70px;
+            padding-top: 60px;
+            margin-bottom: 10px;
             font-size: 60px;
             color: rgb(127, 16, 16);
             border: 0px solid;
-            background-color: rgba(219, 183, 183, 0.61);
-            box-shadow: 10px 10px 40px 2px black;
-            text-shadow: 6px;
+            background-color: rgba(219, 183, 183, 0.137);
+            box-shadow: 5px 0px 40px 0px rgb(0, 0, 0);
             font-family: Arial Black;
+            border-radius: 30px 0px;
         }
         .fon{
             display: grid;
             justify-content: center;
             background-color: peru;
+            animation-name: boom;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes boom{
+            0%{
+                
+            }
+            20%{
+                
+            }
+            40%{
+                
+            }
+            60%{
+                
+
+            }
         }
         .p1{
-            padding-top: 20px;
             padding-bottom:20px ;
-            font-size: 29px;
-            font-family: Wide Latin;
+            font-size: 59px;
+            font-family: Algerian;
         }
         .p2{
             padding-bottom: 20px;
@@ -162,6 +184,7 @@
 </head>
 <body >
     <div class="warp">
+        <h1 class="h">&nbsp;LEO MENS WEAR</h1>
         <div class="dres">
                 <img src="dress.png" alt="">       
             <div class="off">
