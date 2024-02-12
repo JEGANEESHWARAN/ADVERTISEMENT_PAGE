@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="https://seeklogo.com/images/D/discord-color-logo-E5E6DFEF80-seeklogo.com.png" type="x-icon">
+
     <title>ADVERRISEMENT</title>
     <style>
         *{
@@ -12,48 +15,58 @@
             box-sizing: border-box;
         }
         body{
+            padding-top: 20px;
             width: 100%;
             min-height: 100hv;
             display: grid;
             place-items: center;
+            
         }
         .warp{
-            width: 800px;
-            height: 700px;
-            background-color: aqua;
+            width: 700px;
+            height: 750px;
+            background-color: darkorange;
             position: relative;
             overflow: hidden;
+            border-radius: 10px;
+            border: 10px solid burlywood;
         }
         .dres{
-            padding-top: 50px;
+            padding-top: 30px;
             display: flex;
             justify-content: space-around;
         }
         .dres img{
-            padding-left: 20px;
+            margin-left: 20px;
             width: 450px;
+            border-radius: 50%;
+            margin-bottom: 40px;
+            border: 10px solid purple;
         }
         .off{
             writing-mode: vertical-lr;
             padding-top: 90px;
             font-size: 70px;
+            color: darkblue;
+            text-shadow: 6px;
         }
         .fon{
             display: grid;
             justify-content: center;
-            padding: 60px;
+            background-color: peru;
         }
         .p1{
-            padding-bottom:30px ;
-            font-size: 30px;
+            padding-top: 20px;
+            padding-bottom:20px ;
+            font-size: 29px;
             font-family: Wide Latin;
         }
         .p2{
             padding-bottom: 20px;
-            padding-left: 220px;
+            padding-left: 190px;
             font-family: Times New Roman;
             font-weight: 900;
-            font-size: 25px;
+            font-size: 29px;
         }
         .p3{
             padding-left: 210px;
@@ -61,32 +74,62 @@
             font-weight: 900;
             font-size: 17px; 
         }
+        .add{
+            display: grid;
+            justify-content: start;
+            padding-top: 10px;
+            line-height: 20px;
+        }
+        .icons-col{
+    width: 35%; 
+    float: right;
+}
+.icons-col a{
+    text-decoration: none;
+}
+.icons-col i{
+    background-color: rgb(253, 248, 248,0.2);
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+    border-radius: 50%;
+}
+.icons-col i:hover{
+    color: black;
+    background-color: #ffffff;
+}
     </style>
 </head>
 <body >
     <div class="warp">
-    <div class="dres">
-        <img src="dress.png" alt="">
-    
-    <div class="off">
-        <p>offer 50%</p>
-    </div>
-    </div>
+       
+        <div class="dres">
+                <img src="dress.png" alt="">
+            <div class="off">
+                 <p> 50% Offer </p>
+            </div>
+        </div>
+        
     <div class="fon">
         <P class="p1">THE BOYS MENS WEAR</P>
         <P class="p2">NEW COLLECTION</P>
         <P class="p3">
             SEE IT, BUY IT AND WEAR IT
         </P>
-        <P></P>
     </div>
     <DIV class="add">
-        <P>123-456-7890</P>
+        <P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;123-456-7890</P>
         <P>WWW.reallygreatesite.com</P>
     </DIV>
-    <div class="dres2">
-        <img src="" alt="">
-    </div>
+    <div class="icons-col">
+        <a href="#" ><i class="fa-brands fa-instagram"></i></a>
+           <a href="#" ><i class="fa-brands fa-facebook"></i></a>
+           <a href="#" ><i class="fa-brands fa-twitter"></i></a>
+           <a href="#" ><i class="fa-brands fa-youtube"></i></a>
+           <a href="#" ><i class="fa-brands fa-tiktok"></i></a>
+    </div>        
     </div>
 </body>
 </html>
