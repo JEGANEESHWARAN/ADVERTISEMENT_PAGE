@@ -30,6 +30,7 @@
             overflow: hidden;
             border-radius: 10px;
             border: 5px solid brown;
+            box-shadow: 10px 0px 40px 0px;
         }
         .dres{
             padding-top: 30px;
@@ -37,6 +38,7 @@
             justify-content: space-around;
         }
         .dres img{
+            cursor: pointer;
             margin-left: 20px;
             width: 450px;
             box-shadow: 30px 60px 70px rgba(2, 2, 2, 0.489);
@@ -47,18 +49,28 @@
         .shi img{
             width: 200px;
             border-radius: 50%;
+            cursor: pointer;
             position: absolute;
             bottom: 250px;
             left: 300px;
             margin-bottom: 60px;
             border: 15px solid wheat;
+            transition: 0.2s;
+        }
+        .shi img:hover{
+            z-index: 1;
+            transform: scale(1.1);
         }
         .off{
             writing-mode: vertical-lr;
-            padding-top: 90px;
-            font-size: 70px;
-            color: darkblue;
+            padding-top: 70px;
+            font-size: 60px;
+            color: rgb(127, 16, 16);
+            border: 0px solid;
+            background-color: rgba(219, 183, 183, 0.61);
+            box-shadow: 10px 10px 40px 2px black;
             text-shadow: 6px;
+            font-family: Arial Black;
         }
         .fon{
             display: grid;
@@ -84,15 +96,51 @@
             font-weight: 900;
             font-size: 17px; 
         }
+        .op{
+            display: grid;
+            justify-content: center;
+            margin-top: 10px;
+            font-size: 23px;
+            font-family: Brush Script MT;
+            color: rgba(122, 36, 4, 0.813);
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(209, 165, 219, 0.616);
+            height: 35px;
+            border: 0px solid;
+            box-shadow: 0px 0px 10px 2px white;
+        }
+        .ll{
+            display: flex;
+            justify-content: space-between;
+        }
         .add{
             display: grid;
             justify-content: start;
-            padding-top: 10px;
             line-height: 20px;
+        }
+        .ph{
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .ph i{
+            background-color: rgb(253, 248, 248,0.2);
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            line-height: 40px;
+            color: black;
+            border-radius: 50%;  
+        }
+        .ph i:hover{
+        color: rgb(255, 255, 255);
+        background-color: black;
         }
         .icons-col{
     width: 35%; 
     float: right;
+    padding-top: 40px;
 }
 .icons-col a{
     text-decoration: none;
@@ -114,14 +162,11 @@
 </head>
 <body >
     <div class="warp">
-       
         <div class="dres">
-                <img src="dress.png" alt="">
-               
+                <img src="dress.png" alt="">       
             <div class="off">
                  <p> 50% Offer </p>
             </div>
-           
         </div>
         <div class="shi">
             <img src="shi.jpg" alt="">
@@ -133,10 +178,17 @@
             SEE IT, BUY IT AND WEAR IT
         </P>
     </div>
+    <div class="op">
+        <marquee  direction="left">Ethnic men's fashion comprises royal-like Sherwanis, Kurta Pajamas, Nehru Jackets, Bandhgalas & more</marquee>
+    </div>
+    <div class="ll">
     <DIV class="add">
-        <i class="fa-solid fa-phone-volume"></i>
-        <P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;123-456-7890</P>
-        <P>WWW.reallygreatesite.com</P>
+        <div class="ph">
+            <i class="fa-solid fa-phone-volume"></i>
+            <P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>123-456-7890</b></P>
+        </div>
+       
+        <P><b>WWW.reallygreatesite.com</b></P>
     </DIV>
     <div class="icons-col">
         <a href="#" ><i class="fa-brands fa-instagram"></i></a>
@@ -144,7 +196,8 @@
            <a href="#" ><i class="fa-brands fa-twitter"></i></a>
            <a href="#" ><i class="fa-brands fa-youtube"></i></a>
            <a href="#" ><i class="fa-brands fa-tiktok"></i></a>
-    </div>        
+    </div> 
+    </div>       
     </div>
 </body>
 </html>
