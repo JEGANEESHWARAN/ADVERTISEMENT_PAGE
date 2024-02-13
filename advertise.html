@@ -76,28 +76,49 @@
             box-shadow: 5px 0px 40px 0px rgb(0, 0, 0);
             font-family: Arial Black;
             border-radius: 30px 0px;
+            animation-name: boom;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
         }
         .fon{
             display: grid;
             justify-content: center;
             background-color: peru;
-            animation-name: boom;
-            animation-duration: 2s;
+            animation-name: boo;
+            animation-duration: 3s;
             animation-iteration-count: infinite;
         }
         @keyframes boom{
             0%{
-                
+                color: rgba(127, 16, 16, 0); 
+                transform:translate(-55px,0px) ;
             }
             20%{
-                
+                color: rgba(127, 16, 16, 0.221);
+                transform:translate(-55px,0px) ;
             }
             40%{
-                
+                color: rgba(127, 16, 16, 0.527);
             }
             60%{
-                
-
+                color: rgba(127, 16, 16, 0.703);
+            }
+            80%{
+                color: rgba(127, 16, 16, 0.934);
+            }
+        }
+        @keyframes boo{
+            0%{
+                color: rgba(0, 0, 0, 0); 
+            }
+            20%{
+                color: rgba(0, 0, 0, 0.452);
+            }
+            40%{
+                color: rgba(0, 0, 0, 0.596);
+            }
+            60%{
+                color: rgb(0, 0, 0);
             }
         }
         .p1{
