@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         body {
+            background-color: #ffffff;
+        }
+
+        .top {
+            background: linear-gradient(violet, gray);
+            display: flex;
+            margin: -7px -9px;
+            padding-bottom: 80px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        @media screen and (max-width: 1500px) {
+            .top img {
+                width: 900px;
+                height: 130px;
+            }
+        }
+
+        @media screen and (max-width: 100px) {
+            .top img {
+                width: 500px;
+                height: 100px;
+            }
+        }
+
+        .status nav ul {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            background-color: snow;
+            margin: 0px 50px 0px;
+            box-shadow: 0px 1px 7px;
+            border-radius: 2px;
+            height: 70px;
+        }
+
+        ul li {
+            text-decoration: none;
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: lightcoral;
+            font-size: 17px;
+            font-weight: 700;
+            transition: 0.5s;
+        }
+        .element{
+            background-color: rgba(236, 165, 236, 0.849);
+            height: 40px;
+            display: flex;
+            margin: 0px 50px;
+            align-items: center;
+            font-size: 17px;
+        }
+        .element p a{
+            text-decoration: none;
+            padding-left: 20px;
+        }
+
+        .list p a {
+            text-decoration: none;
+            color: saddlebrown;
+            font-size: 17px;
+            
+        }
+
+        .list {
+            background:linear-gradient(darkorchid,gray);
+            display: flex;
+            margin: 0px 50px;
+            padding-left: 20px;
+        }
+
+        .list1 li a {
+            text-decoration: none;
+            font-weight: 800;
+            color: rgb(106, 0, 255);
+        }
+        .list1 li a:hover{
+            color: orangered;
+        }
+        .list1 ul li {
+            padding: 5px;
+            font-size: 20px;
+        }
+
+        .list1 ul hr {
+            width: 350px;
+            margin-left: 0px;
+            color: black;
+        }
+        .contain{
+            margin: 10px 200px 100px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+            text-align: center;
+            gap: 20px;
+            
+        }
+        .contain .pho{
+            background-color: gainsboro;
+            border-radius: 20px;
+            transition: 0.5s;
+        }
+        .contain .pho:hover{
+            transform: scale(1.05);
+        }
+        .contain .pho p{
+            font-size: 18px;
+            font-weight: bolder;
+        }
+        .foot {
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px; 
+            overflow: hidden;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .icons-col ul li {
+            display: grid;
+            margin-bottom: 20px;
+            background-color: black;
+        }
+
+        .icons-col {
+            width: 20%;
+        }
+
+        .icons-col p {
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .icons-col a {
+            text-decoration: none;
+        }
+
+        .icons-col ul a li {
+            font-size: 15px;
+            color: white;
+            text-decoration: none;
+            display: block;
+            transition: 0.03s
+        }
+
+        .icons-col ul a li:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .icons-col i {
+            display: inline-block;
+            background-color: rgb(253, 248, 248, 0.2);
+            height: 40px;
+            width: 40px;
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            color: #ffffff;
+            border-radius: 50%;
+        }
+
+        .icons-col i:hover {
+            color: black;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <img src="logo.png" alt="">
+    </div>
+    <div class="status">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li id="hi">
+                    <a href="#">ABOUT US</a>
+                </li>
+                </li>
+                <li><a href="#">ACADEMICS</a></li>
+                <li><a href="#">RESEARCH AND DEVELOPMENT</a></li>
+                <li><a href="#">ADMISSION</a></li>
+                <li><a href="#"> FACILITIES</a></li>
+                <li><a href="#">COMMITTEES</a></li>
+                <li><a href="#">CONTACT</a>
+                </li>
+                <li><a href="#">MY ACCOUNT</a></li>
+            </ul>
+        </nav>
+    </div>
+        <div class="list">
+            <h3>CSE DEPARTMENT-Computer Science Engineering</h3>
+        </div>
+        <div class="element">
+            <p><a href="cse.html">Home > Computer Science Engin...</a></p>
+        </div>
+        <div class="contain">
+            <div class="pho">
+                <img src="non1.jpg" alt="">
+                <p>Name: Mr.SENDHILKUMAR M</p>
+                <p>Department:CSE</p>
+                <p> DECE,</p>
+                <p> 	Artisan Grade II</p>
+                <a href="#">	sendhilkumarmm@gcetj.edu.in</a>
+                <p>	9976997251</p>
+            </div>
+            <div class="pho">
+                <img src="non2.jpg" alt="">
+                <p>Name: 	MURUGAPANDIAN V</p>
+                <p>Department:CSE</p>
+                <p>	D.Comp.Tech</p>
+                <p>ALab Assistant </p>
+                <a href="#">		murugapandianv@gcetj.edu.in</a>
+                <p>	9994576738</p>
+            </div>
+            <div class="pho">
+                <img src="non3.jpg" alt="">
+                <p>Name: 		VIMALPRASATH D</p>
+                <p>Department:CSE</p>
+                <p> D.Com.Engg ,BCA, MCA</p>
+                <p>Lab Assistant	</p>
+                <a href="#">		vimalprasathd@gcetj.edu.in</a>
+                <p>	9994576738</p>
+            </div>
+            <div class="pho">
+                <img src="non4.jpg" alt="">
+                <p>Name: Deepa </p>
+                <p>Department:CSE</p>
+                <p>D.Comp.Tech	</p>
+                <p>		Lab Assistant</p>
+                <a href="#">hirugnanamk@gcetj.edu.in</a>
+                <p>8668164354</p>
+            </div>
+            <div class="pho">
+                <img src="non5.jpg" alt="">
+                <p>Name: 	THIRUGNANAM K</p>
+                <p>Department:CSE</p>
+                <p>D.Comp.Tech</p>
+                <p>	Lab Assistant</p>
+                <a href="#">	dheepar@gcetj.edu.in</a>
+                <p>9942427283</p>
+            </div>
+        </div>
+        <div class="foot">
+            <div class="icons-col">
+                <br>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <div class="icons-col">
+                <p style="color: blue;">QUICK LINKS</p>
+                <ul>
+                    <a href="#">
+                        <li>News & Events</li>
+                    </a>
+                    <a href="#">
+                        <li>Admission Procedure</li>
+                    </a>
+                    <a href="#">
+                        <li>Fees struture</li>
+                    </a>
+                    <a href="#">
+                        <li>Circulars/Minutes</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="icons-col">
+                <p style="color: blue;">DOWNLOADS</p>
+                <ul>
+                    <a href="#">
+                        <li>mandatory Disclosure</li>
+                    </a>
+                    <a href="#">
+                        <li>Facuity/Staff forms</li>
+                    </a>
+                    <a href="#">
+                        <li>Govt scholarship forms</li>
+                    </a>
+                    <a href="#">
+                        <li>Newsroom</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="icons-col">
+                <span>
+                    <p style="color: blue;">Resourcs
+                </span></p>
+                <ul>
+                    <a href="#">
+                        <li>College</li>
+                    </a>
+                    <a href="#">
+                        <li>Support</li>
+                    </a>
+                    <a href="#">
+                        <li>Safety</li>
+                    </a>
+                    <a href="#">
+                        <li>Blog</li>
+                    </a>
+                    <a href="#">
+                        <li>Feedback</li>
+                    </a>
+                    <a href="#">
+                        <li>Developers</li>
+                    </a>
+                    <a href="#">
+                        <li>Creators</li>
+                    </a>
+                    <a href="#">
+                        <li>Community</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="icons-col">
+                <span style="color: rgb(8, 12, 248);">
+                    <p>CONTACT US</p>
+                </span>
+                <ul>
+                    <a href="#">
+                        <li>GOVEERNMENT COLLEGE OF ENGINEERING-THANJAVUR</li>
+                    </a>
+                    <a href="#">
+                        <li>thanjavur,</li>
+                    </a>
+                    <a href="#">
+                        <li>Tamil Nadu - 613 402</li>
+                    </a>
+                    <a href="#">
+                        <li>Phone-04362 221112 221113</li>
+                    </a>
+                    <a href="#">
+                        <li>Fax - 04362 221112</li>
+                    </a>
+                    <a href="#">
+                        <li>E-mail gcesengipatti@gmail.com</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+</body>
+</html>
